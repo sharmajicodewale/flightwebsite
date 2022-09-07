@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav style="background:rgba(0, 100, 0);">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><i class="material-icons"
+                    style="font-size: 30;margin-left: 10px;">flight_takeoff</i>UdaanByFlight</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+                <li style="display: flex; flex-direction: column; align-items: center; padding: 2px;"> <%=result.adminname %></li>
+                <li><img src='/images/<%=result.picture %>' style=" width: 50px;height: 50px; border-radius: 25px;position: relative;margin-top: 10%;padding: 10%;"</li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/flight/addnewflights" target="mw">Add Flight</a></li>
+                <li><a href="/flight/displayall" target="mw">List Flight</a></li>
+                <li><a href="/admin/adminlogout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <iframe style="width: 100vw;height: 700px;" name="mw" frameborder="0"></iframe>
+</body>
+
+</html>

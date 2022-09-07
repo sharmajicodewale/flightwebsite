@@ -1,0 +1,117 @@
+<html>
+<style>
+   
+
+    .root {
+        width: auto;
+        height: auto;
+        background: #f8c291;
+        border-radius: 10px;
+        padding: 10px;
+        height: 100vh;
+    }
+
+    .heading {
+        color: #8e44ad;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: Oxygen;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+</style>
+
+
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/javascripts/project.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+
+        $(document).ready(function () {
+            $('.timepicker').timepicker();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="root">
+        <div class="heading">
+            <span><img src="/images/airindia.png" width="40"> &nbsp; </span> Flight Enquiry System
+            
+        </div>
+        <hr>
+
+
+        <div class="row">
+            <div class="col s3">
+                <div class="input-field">
+                    <i class="material-icons prefix">flight_takeoff</i>
+                    <select name="sourcestate" id="sourcestate">
+                        <option value="" disabled selected>Choose your State</option>
+                    </select>
+                    <label>Source State</label>
+                </div>
+            </div>
+
+            <div class="col s3">
+                <div class="input-field">
+                    <i class="material-icons prefix">flight_takeoff</i>
+                    <select name="sourcecity" id="sourcecity">
+                        <option value="" disabled selected>Choose your City</option>
+                    </select>
+                    <label>Source City</label>
+                </div>
+
+            </div>
+
+            <div class="col s3">
+                <div class="input-field">
+                    <i class="material-icons prefix">flight_land</i>
+                    <select name="destinationstate" id="destinationstate">
+                        <option value="" disabled selected>Choose your State</option>
+                    </select>
+                    <label>Destination State</label>
+                </div>
+
+            </div>
+            <div class="col s3">
+                <div class="input-field">
+                    <i class="material-icons prefix">flight_land</i>
+                    <select name="destinationcity" id="destinationcity">
+                        <option value="" disabled selected>Choose your City</option>
+                    </select>
+                    <label>Destination City</label>
+                </div>
+                
+            </div>
+        </div>
+       <div class="row" style="display: flex;justify-content: center;">
+            <button style="color: blue;" id="btn" class="waves-effect waves-light btn"><i class="material-icons left">search</i>Search</button>
+        </div>
+        
+            <table class="striped" id="result"> </table>
+       
+    </div>
+</body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
